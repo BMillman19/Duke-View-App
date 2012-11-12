@@ -9,47 +9,58 @@
 #import "AppDelegate.h"
 
 #import "DukeWebViewController.h"
-#import "MenuViewController.h"
-#import "ImageFlipperViewController.h"
+#import "ImageScrollerViewController.h"
+
+#define kFirstTabURL @"http://www.goduke.com"
+#define kSecondTabURL @"http://admit.duke.edu/"
+
+#define kFirstTabTitle @"Athletics"
+#define kSecondTabTitle @"Admission"
+#define kThirdTabTitle @"Images"
+
 
 @implementation AppDelegate
 
-@synthesize webViewController = _webViewController;
-@synthesize imageFlipperViewController = _imageFlipperViewController;
-@synthesize menuViewController = _menuViewController;
-@synthesize navController = _navController;
+@synthesize firstWebViewController = _firstWebViewController;
+@synthesize secondWebViewController = _secondWebViewController;
+@synthesize imageScrollerViewController = _imageScrollerViewController;
+@synthesize tabBarController = _tabBarController;
 
-+ (AppDelegate *)sharedAppDelegate
-{
-    return (AppDelegate *)[[UIApplication sharedApplication] delegate];
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.menuViewController = [[MenuViewController alloc] initWithNibName:@"MenuViewController" bundle:nil];
-    self.navController = [[UINavigationController alloc]  initWithRootViewController:self.menuViewController];
-    self.window.rootViewController = self.navController;
+    
+    // Set up firstWebViewController`
+    self.firstWebViewController = [[DukeWebViewController alloc] initWithNibName:@"DukeWebViewController" bundle:nil];
+    self.firstWebViewController.pageURL = kFirstTabURL;
+    self.firstWebViewController.title = kFirstTabTitle;
+    self.firstWebViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:kFirstTabTitle image:[UIImage imageNamed:@"sports"] tag:0];
+    
+    // Set up secondWebViewController
+    self.secondWebViewController = [[DukeWebViewController alloc] initWithNibName:@"DukeWebViewController" bundle:nil];
+    self.secondWebViewController.pageURL = kSecondTabURL;
+    self.secondWebViewController.title = kSecondTabTitle;
+    self.secondWebViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:kSecondTabTitle image:[UIImage imageNamed:@"academics"] tag:0];
+    
+    // Set up imageScrollerViewController
+    self.imageScrollerViewController = [[ImageScrollerViewController alloc] initWithNibName:@"ImageScrollerViewController" bundle:nil];
+    self.imageScrollerViewController.title = kThirdTabTitle;
+    self.imageScrollerViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:kThirdTabTitle image:[UIImage imageNamed:@"images"] tag:0];
+
+    
+    // Set up tab bar controller
+    self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController.delegate = self;
+    self.tabBarController.viewControllers = @[self.firstWebViewController, self.secondWebViewController, self.imageScrollerViewController];
+    
+    self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }
 
-- (DukeWebViewController *)webViewController
-{
-    if (!_webViewController) {
-        _webViewController = [[DukeWebViewController alloc] initWithNibName:@"DukeWebViewController" bundle:nil];
-    }
-    return _webViewController;
-}
 
-- (ImageFlipperViewController *)imageFlipperViewController
-{
-    if (!_imageFlipperViewController) {
-        _imageFlipperViewController = [[ImageFlipperViewController alloc] initWithNibName:@"ImageFlipperViewController" bundle:nil];
-    }
-    return _imageFlipperViewController;
-}
 
 
 @end

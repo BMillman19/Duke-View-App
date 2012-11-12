@@ -9,17 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @class DukeWebViewController;
-@class MenuViewController;
-@class ImageFlipperViewController;
+@class ImageScrollerViewController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-+ (AppDelegate *)sharedAppDelegate;
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) DukeWebViewController *webViewController;
-@property (strong, nonatomic) MenuViewController *menuViewController;
-@property (strong, nonatomic) ImageFlipperViewController *imageFlipperViewController;
-@property (strong, nonatomic) UINavigationController *navController;
+@property (strong, nonatomic) DukeWebViewController *firstWebViewController;
+@property (strong, nonatomic) DukeWebViewController *secondWebViewController;
+@property (strong, nonatomic) ImageScrollerViewController *imageScrollerViewController;
+@property (strong, nonatomic) UITabBarController *tabBarController;
 
 @end

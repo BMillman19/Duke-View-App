@@ -12,5 +12,6 @@
 @interface DukeWebViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (copy, nonatomic) NSString *pageURL;
 
 @end

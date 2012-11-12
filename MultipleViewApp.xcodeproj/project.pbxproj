@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D8CD586165151AB00269EFB /* ImageScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8CD584165151AB00269EFB /* ImageScrollerViewController.m */; };
+		3D8CD587165151AB00269EFB /* ImageScrollerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8CD585165151AB00269EFB /* ImageScrollerViewController.xib */; };
+		3D8CD5891651562900269EFB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8CD5881651562800269EFB /* QuartzCore.framework */; };
+		3D8CD58C16515F6B00269EFB /* academics.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8CD58A16515F6B00269EFB /* academics.png */; };
+		3D8CD58D16515F6B00269EFB /* academics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8CD58B16515F6B00269EFB /* academics@2x.png */; };
+		3D8CD59016515F9B00269EFB /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8CD58E16515F9B00269EFB /* images.png */; };
+		3D8CD59316515FDE00269EFB /* images@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8CD59216515FDE00269EFB /* images@2x.png */; };
+		3D8CD59616515FFD00269EFB /* sports.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8CD59416515FFD00269EFB /* sports.png */; };
+		3D8CD59716515FFD00269EFB /* sports@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8CD59516515FFD00269EFB /* sports@2x.png */; };
 		E5232F41163487A200D0D390 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5232F40163487A200D0D390 /* UIKit.framework */; };
 		E5232F43163487A200D0D390 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5232F42163487A200D0D390 /* Foundation.framework */; };
 		E5232F45163487A200D0D390 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5232F44163487A200D0D390 /* CoreGraphics.framework */; };
@@ -18,11 +27,7 @@
 		E5232F57163487A200D0D390 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5232F56163487A200D0D390 /* Default-568h@2x.png */; };
 		E5232F6D163489DB00D0D390 /* DukeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5232F6B163489DB00D0D390 /* DukeWebViewController.m */; };
 		E5232F6E163489DB00D0D390 /* DukeWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5232F6C163489DB00D0D390 /* DukeWebViewController.xib */; };
-		E5232F7216348B1900D0D390 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5232F7016348B1900D0D390 /* MenuViewController.m */; };
-		E5232F7316348B1900D0D390 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5232F7116348B1900D0D390 /* MenuViewController.xib */; };
 		E5232F7616348C6400D0D390 /* duke_crest.png in Resources */ = {isa = PBXBuildFile; fileRef = E5232F7516348C6400D0D390 /* duke_crest.png */; };
-		E5232F9C163496C700D0D390 /* ImageFlipperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5232F9A163496C700D0D390 /* ImageFlipperViewController.m */; };
-		E5232F9D163496C700D0D390 /* ImageFlipperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5232F9B163496C700D0D390 /* ImageFlipperViewController.xib */; };
 		E5232FA31634992D00D0D390 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5232F9E1634992D00D0D390 /* image1.jpg */; };
 		E5232FA41634992D00D0D390 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5232F9F1634992D00D0D390 /* image2.jpg */; };
 		E5232FA51634992D00D0D390 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5232FA01634992D00D0D390 /* image3.jpg */; };
@@ -31,6 +36,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D8CD583165151AB00269EFB /* ImageScrollerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScrollerViewController.h; sourceTree = "<group>"; };
+		3D8CD584165151AB00269EFB /* ImageScrollerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageScrollerViewController.m; sourceTree = "<group>"; };
+		3D8CD585165151AB00269EFB /* ImageScrollerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageScrollerViewController.xib; sourceTree = "<group>"; };
+		3D8CD5881651562800269EFB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3D8CD58A16515F6B00269EFB /* academics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = academics.png; sourceTree = "<group>"; };
+		3D8CD58B16515F6B00269EFB /* academics@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "academics@2x.png"; sourceTree = "<group>"; };
+		3D8CD58E16515F9B00269EFB /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
+		3D8CD59216515FDE00269EFB /* images@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "images@2x.png"; sourceTree = "<group>"; };
+		3D8CD59416515FFD00269EFB /* sports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sports.png; sourceTree = "<group>"; };
+		3D8CD59516515FFD00269EFB /* sports@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sports@2x.png"; sourceTree = "<group>"; };
 		E5232F3C163487A200D0D390 /* MultipleViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipleViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5232F40163487A200D0D390 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E5232F42163487A200D0D390 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,13 +62,7 @@
 		E5232F6A163489DB00D0D390 /* DukeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DukeWebViewController.h; sourceTree = "<group>"; };
 		E5232F6B163489DB00D0D390 /* DukeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DukeWebViewController.m; sourceTree = "<group>"; };
 		E5232F6C163489DB00D0D390 /* DukeWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DukeWebViewController.xib; sourceTree = "<group>"; };
-		E5232F6F16348B1900D0D390 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		E5232F7016348B1900D0D390 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		E5232F7116348B1900D0D390 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		E5232F7516348C6400D0D390 /* duke_crest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = duke_crest.png; sourceTree = "<group>"; };
-		E5232F99163496C700D0D390 /* ImageFlipperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFlipperViewController.h; sourceTree = "<group>"; };
-		E5232F9A163496C700D0D390 /* ImageFlipperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFlipperViewController.m; sourceTree = "<group>"; };
-		E5232F9B163496C700D0D390 /* ImageFlipperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageFlipperViewController.xib; sourceTree = "<group>"; };
 		E5232F9E1634992D00D0D390 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
 		E5232F9F1634992D00D0D390 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
 		E5232FA01634992D00D0D390 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
@@ -66,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D8CD5891651562900269EFB /* QuartzCore.framework in Frameworks */,
 				E5232F41163487A200D0D390 /* UIKit.framework in Frameworks */,
 				E5232F43163487A200D0D390 /* Foundation.framework in Frameworks */,
 				E5232F45163487A200D0D390 /* CoreGraphics.framework in Frameworks */,
@@ -96,6 +106,7 @@
 		E5232F3F163487A200D0D390 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D8CD5881651562800269EFB /* QuartzCore.framework */,
 				E5232F40163487A200D0D390 /* UIKit.framework */,
 				E5232F42163487A200D0D390 /* Foundation.framework */,
 				E5232F44163487A200D0D390 /* CoreGraphics.framework */,
@@ -142,12 +153,9 @@
 				E5232F6A163489DB00D0D390 /* DukeWebViewController.h */,
 				E5232F6B163489DB00D0D390 /* DukeWebViewController.m */,
 				E5232F6C163489DB00D0D390 /* DukeWebViewController.xib */,
-				E5232F6F16348B1900D0D390 /* MenuViewController.h */,
-				E5232F7016348B1900D0D390 /* MenuViewController.m */,
-				E5232F7116348B1900D0D390 /* MenuViewController.xib */,
-				E5232F99163496C700D0D390 /* ImageFlipperViewController.h */,
-				E5232F9A163496C700D0D390 /* ImageFlipperViewController.m */,
-				E5232F9B163496C700D0D390 /* ImageFlipperViewController.xib */,
+				3D8CD583165151AB00269EFB /* ImageScrollerViewController.h */,
+				3D8CD584165151AB00269EFB /* ImageScrollerViewController.m */,
+				3D8CD585165151AB00269EFB /* ImageScrollerViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -155,6 +163,12 @@
 		E5232F7416348C6400D0D390 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3D8CD59416515FFD00269EFB /* sports.png */,
+				3D8CD59516515FFD00269EFB /* sports@2x.png */,
+				3D8CD58E16515F9B00269EFB /* images.png */,
+				3D8CD59216515FDE00269EFB /* images@2x.png */,
+				3D8CD58A16515F6B00269EFB /* academics.png */,
+				3D8CD58B16515F6B00269EFB /* academics@2x.png */,
 				E5232F9E1634992D00D0D390 /* image1.jpg */,
 				E5232F9F1634992D00D0D390 /* image2.jpg */,
 				E5232FA01634992D00D0D390 /* image3.jpg */,
@@ -221,14 +235,19 @@
 				E5232F55163487A200D0D390 /* Default@2x.png in Resources */,
 				E5232F57163487A200D0D390 /* Default-568h@2x.png in Resources */,
 				E5232F6E163489DB00D0D390 /* DukeWebViewController.xib in Resources */,
-				E5232F7316348B1900D0D390 /* MenuViewController.xib in Resources */,
 				E5232F7616348C6400D0D390 /* duke_crest.png in Resources */,
-				E5232F9D163496C700D0D390 /* ImageFlipperViewController.xib in Resources */,
 				E5232FA31634992D00D0D390 /* image1.jpg in Resources */,
 				E5232FA41634992D00D0D390 /* image2.jpg in Resources */,
 				E5232FA51634992D00D0D390 /* image3.jpg in Resources */,
 				E5232FA61634992D00D0D390 /* image4.jpg in Resources */,
 				E5232FA71634992D00D0D390 /* image5.jpg in Resources */,
+				3D8CD587165151AB00269EFB /* ImageScrollerViewController.xib in Resources */,
+				3D8CD58C16515F6B00269EFB /* academics.png in Resources */,
+				3D8CD58D16515F6B00269EFB /* academics@2x.png in Resources */,
+				3D8CD59016515F9B00269EFB /* images.png in Resources */,
+				3D8CD59316515FDE00269EFB /* images@2x.png in Resources */,
+				3D8CD59616515FFD00269EFB /* sports.png in Resources */,
+				3D8CD59716515FFD00269EFB /* sports@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,8 +261,7 @@
 				E5232F4D163487A200D0D390 /* main.m in Sources */,
 				E5232F51163487A200D0D390 /* AppDelegate.m in Sources */,
 				E5232F6D163489DB00D0D390 /* DukeWebViewController.m in Sources */,
-				E5232F7216348B1900D0D390 /* MenuViewController.m in Sources */,
-				E5232F9C163496C700D0D390 /* ImageFlipperViewController.m in Sources */,
+				3D8CD586165151AB00269EFB /* ImageScrollerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

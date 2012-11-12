@@ -16,19 +16,34 @@
 @implementation DukeWebViewController
 
 @synthesize webView = _webView;
+@synthesize pageURL = _pageURL;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSURL *url = [NSURL URLWithString:@"http://www.goduke.com"];
-    NSURLRequest *req = [NSURLRequest requestWithURL:url];
-    [_webView loadRequest:req];
+    [self loadPage];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)setPageURL:(NSString *)pageURL
+{
+    _pageURL = [pageURL copy];
+    [self loadPage];
+}
+
+- (void)loadPage
+{
+    if (self.pageURL) {
+        NSURL *url = [NSURL URLWithString:self.pageURL];
+        NSURLRequest *req = [NSURLRequest requestWithURL:url];
+        [_webView loadRequest:req];
+    }
 }
 
 @end
